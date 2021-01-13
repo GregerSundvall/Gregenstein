@@ -5,7 +5,6 @@
 //  Created by Greger Sundvall on 2021-01-13.
 //
 
-import Foundation
 
 public struct Vector {
     public var x, y: Double
@@ -17,6 +16,9 @@ public struct Vector {
 }
 
 public extension Vector {
+    var length: Double {
+        return (x * x + y * y).squareRoot()
+    }
     static func + (lhs: Vector, rhs: Vector) -> Vector {
         return Vector(x: lhs.x + rhs.x, y: lhs.y + rhs.y)
     }

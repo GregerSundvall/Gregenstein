@@ -5,7 +5,6 @@
 //  Created by Greger Sundvall on 2021-01-13.
 //
 
-import Foundation
 
 public struct Color {
     public var r, g, b, a: UInt8
