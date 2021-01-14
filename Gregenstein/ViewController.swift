@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     private var world = World(map: loadMap())
     private var lastFrameTime = CACurrentMediaTime()
 
-    private var inputvector: Vector {
+    private var inputVector: Vector {
         switch panGesture.state {
         case .began, .changed:
             let translation = panGesture.translation(in: view)
@@ -54,7 +54,9 @@ class ViewController: UIViewController {
     
     @objc func update(_ displayLink: CADisplayLink) {
         let timeStep = min(maximumTimeStep, displayLink.timestamp - lastFrameTime)
-        let input = Input(velocity: inputvector)
+        let inputVector = self.inputVector
+        let rotation = inputVector.x * world.player.turningSpeed * worldTimeStep
+        let input = Input(speed: -inputVector.y, rotation: Rotation(sine: sin(rotation), cosine: cos(rotation)))
         let worldSteps = (timeStep / worldTimeStep).rounded(.up)
         for _ in 0 ..< Int(worldSteps) {
             world.update(timeStep: timeStep / worldSteps, input: input)

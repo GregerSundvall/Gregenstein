@@ -32,6 +32,8 @@
 		5597DA1C25AF205A00CCD974 /* Map.json in Resources */ = {isa = PBXBuildFile; fileRef = 5597DA1B25AF205A00CCD974 /* Map.json */; };
 		5597DA2725AF259300CCD974 /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA2625AF259300CCD974 /* Thing.swift */; };
 		5597DA3125AF2A8900CCD974 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA3025AF2A8900CCD974 /* Input.swift */; };
+		5597DA3725B04CCD00CCD974 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA3625B04CCD00CCD974 /* Ray.swift */; };
+		5597DA3D25B05EBB00CCD974 /* Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA3C25B05EBB00CCD974 /* Rotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		5597DA1B25AF205A00CCD974 /* Map.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Map.json; sourceTree = "<group>"; };
 		5597DA2625AF259300CCD974 /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
 		5597DA3025AF2A8900CCD974 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
+		5597DA3625B04CCD00CCD974 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		5597DA3C25B05EBB00CCD974 /* Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,8 @@
 				5597DA1525AF1B3300CCD974 /* Tilemap.swift */,
 				5597DA2625AF259300CCD974 /* Thing.swift */,
 				5597DA3025AF2A8900CCD974 /* Input.swift */,
+				5597DA3625B04CCD00CCD974 /* Ray.swift */,
+				5597DA3C25B05EBB00CCD974 /* Rotation.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -487,6 +493,8 @@
 				5597D9F225AEF8D700CCD974 /* Renderer.swift in Sources */,
 				5597D9F825AF054500CCD974 /* Vector.swift in Sources */,
 				5597D9FE25AF08C900CCD974 /* Player.swift in Sources */,
+				5597DA3D25B05EBB00CCD974 /* Rotation.swift in Sources */,
+				5597DA3725B04CCD00CCD974 /* Ray.swift in Sources */,
 				5597DA1625AF1B3300CCD974 /* Tilemap.swift in Sources */,
 				5597DA2725AF259300CCD974 /* Thing.swift in Sources */,
 				5597D9E625AEF03200CCD974 /* Color.swift in Sources */,
