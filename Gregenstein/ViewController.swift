@@ -7,12 +7,18 @@ import Engine
 private let joystickRadius: Double = 40
 private let maximumTimeStep: Double = 1 / 20
 private let worldTimeStep: Double = 1 / 120
+private func loadTextures() -> Textures {
+    return Textures(loader: { name in
+    Bitmap(image: UIImage(named: name)!)!
+    })
+}
 
 class ViewController: UIViewController {
     private let imageView = UIImageView()
     private let panGesture = UIPanGestureRecognizer()
     private var world = World(map: loadMap())
     private var lastFrameTime = CACurrentMediaTime()
+    private let textures = loadTextures()
 
     private var inputVector: Vector {
         switch panGesture.state {
@@ -63,7 +69,7 @@ class ViewController: UIViewController {
         }
         lastFrameTime = displayLink.timestamp
         let width = Int(imageView.bounds.width), height = Int(imageView.bounds.height)
-        var renderer = Renderer(width: width, height: height)
+        var renderer = Renderer(width: width, height: height, textures: textures)
         renderer.draw(world)
         
         imageView.image = UIImage(bitmap: renderer.bitmap)

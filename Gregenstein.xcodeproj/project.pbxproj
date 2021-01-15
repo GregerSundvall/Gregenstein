@@ -34,6 +34,7 @@
 		5597DA3125AF2A8900CCD974 /* Input.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA3025AF2A8900CCD974 /* Input.swift */; };
 		5597DA3725B04CCD00CCD974 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA3625B04CCD00CCD974 /* Ray.swift */; };
 		5597DA3D25B05EBB00CCD974 /* Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA3C25B05EBB00CCD974 /* Rotation.swift */; };
+		5597DA4325B0899400CCD974 /* Textures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA4225B0899400CCD974 /* Textures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		5597DA3025AF2A8900CCD974 /* Input.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Input.swift; sourceTree = "<group>"; };
 		5597DA3625B04CCD00CCD974 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
 		5597DA3C25B05EBB00CCD974 /* Rotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotation.swift; sourceTree = "<group>"; };
+		5597DA4225B0899400CCD974 /* Textures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Textures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 				5597DA3025AF2A8900CCD974 /* Input.swift */,
 				5597DA3625B04CCD00CCD974 /* Ray.swift */,
 				5597DA3C25B05EBB00CCD974 /* Rotation.swift */,
+				5597DA4225B0899400CCD974 /* Textures.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				5597DA1025AF1AF300CCD974 /* Tile.swift in Sources */,
 				5597D9F225AEF8D700CCD974 /* Renderer.swift in Sources */,
 				5597D9F825AF054500CCD974 /* Vector.swift in Sources */,
+				5597DA4325B0899400CCD974 /* Textures.swift in Sources */,
 				5597D9FE25AF08C900CCD974 /* Player.swift in Sources */,
 				5597DA3D25B05EBB00CCD974 /* Rotation.swift in Sources */,
 				5597DA3725B04CCD00CCD974 /* Ray.swift in Sources */,
