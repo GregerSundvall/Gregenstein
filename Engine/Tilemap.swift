@@ -39,7 +39,7 @@ public extension Tilemap {
     
     func hitTest(_ ray: Ray) -> Vector {
         var position = ray.origin
-        let slope = ray.direction.x / ray.direction.y
+        //let slope = ray.direction.x / ray.direction.y
         repeat {
             let edgeDistanceX, edgeDistanceY: Double
             if ray.direction.x > 0 {
