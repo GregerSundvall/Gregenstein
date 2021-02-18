@@ -6,12 +6,14 @@
 //
 
 public enum Texture: String, CaseIterable {
-    case wall, wall2
-    case wallGreenish, wallGreenish2
-    case wallArt, wallArt2
-    case floor
-    case floorLava
-    case ceiling
+    case wall00, wall01
+    case wall10, wall11
+    case wall20, wall21
+    case wall30, wall31
+    case wall40, wall41
+    case floor0, floor1
+    case ceiling0, ceiling1
+    
     case monster
     case monsterWalk1, monsterWalk2
 }
