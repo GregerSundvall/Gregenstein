@@ -28,7 +28,7 @@ public extension Tile {
         }
     }
     
-    var textures: [Texture] {
+    var textures: [TextureEnum] {
         switch self {
         case .wall0:
             return [.wall00, .wall01]

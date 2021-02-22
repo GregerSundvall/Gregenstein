@@ -39,6 +39,8 @@
 		5597DA4F25B1E71A00CCD974 /* Billboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA4E25B1E71A00CCD974 /* Billboard.swift */; };
 		5597DA5525B5AF4500CCD974 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA5425B5AF4500CCD974 /* Actor.swift */; };
 		5597DA5B25B5C1FF00CCD974 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA5A25B5C1FF00CCD974 /* Animation.swift */; };
+		55CA428C25E00B6F00DD98E9 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA428B25E00B6F00DD98E9 /* Map.swift */; };
+		55CA429225E00BA700DD98E9 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA429125E00BA700DD98E9 /* Texture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,8 @@
 		5597DA4E25B1E71A00CCD974 /* Billboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billboard.swift; sourceTree = "<group>"; };
 		5597DA5425B5AF4500CCD974 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		5597DA5A25B5C1FF00CCD974 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		55CA428B25E00B6F00DD98E9 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		55CA429125E00BA700DD98E9 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +241,8 @@
 		5597D9B525AEEB6800CCD974 /* Engine */ = {
 			isa = PBXGroup;
 			children = (
+				55CA429125E00BA700DD98E9 /* Texture.swift */,
+				55CA428B25E00B6F00DD98E9 /* Map.swift */,
 				5597D9DA25AEED7700CCD974 /* Color.swift */,
 				5597D9B725AEEB6800CCD974 /* Info.plist */,
 				5597D9E025AEEF8D00CCD974 /* Bitmap.swift */,
@@ -501,6 +507,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5597DA0A25AF155D00CCD974 /* Rect.swift in Sources */,
+				55CA429225E00BA700DD98E9 /* Texture.swift in Sources */,
 				5597DA0425AF10E800CCD974 /* World.swift in Sources */,
 				5597D9E125AEEF8E00CCD974 /* Bitmap.swift in Sources */,
 				5597DA3125AF2A8900CCD974 /* Input.swift in Sources */,
@@ -509,6 +516,7 @@
 				5597DA4F25B1E71A00CCD974 /* Billboard.swift in Sources */,
 				5597D9F225AEF8D700CCD974 /* Renderer.swift in Sources */,
 				5597D9F825AF054500CCD974 /* Vector.swift in Sources */,
+				55CA428C25E00B6F00DD98E9 /* Map.swift in Sources */,
 				5597DA4325B0899400CCD974 /* Textures.swift in Sources */,
 				5597D9FE25AF08C900CCD974 /* Player.swift in Sources */,
 				5597DA3D25B05EBB00CCD974 /* Rotation.swift in Sources */,

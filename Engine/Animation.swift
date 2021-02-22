@@ -6,18 +6,18 @@
 //
 
 public struct Animation {
-    public let frames: [Texture]
+    public let frames: [TextureEnum]
     public let duration: Double
     public var time: Double = 0
     
-    public init(frames: [Texture], duration: Double) {
+    public init(frames: [TextureEnum], duration: Double) {
         self.frames = frames
         self.duration = duration
     }
 }
 
 public extension Animation {
-    var texture: Texture {
+    var texture: TextureEnum {
         guard duration > 0 else {
             return frames[0]
         }

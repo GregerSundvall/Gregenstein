@@ -14,6 +14,7 @@ private func loadTextures() -> Textures {
 }
 
 class ViewController: UIViewController {
+    let asdf = UIImage()
     private let imageView = UIImageView()
     private let panGesture = UIPanGestureRecognizer()
     private var world = World(map: loadMap())
