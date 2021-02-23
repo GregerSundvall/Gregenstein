@@ -5,7 +5,7 @@
 //  Created by Greger Sundvall on 2021-01-14.
 //
 
-public enum Texture: String, CaseIterable {
+public enum TextureEnum: String, CaseIterable {
     case wall, wall2
     case wallGreenish, wallGreenish2
     case wallArt, wallArt2
@@ -16,20 +16,29 @@ public enum Texture: String, CaseIterable {
     case monsterWalk1, monsterWalk2
 }
 
-public struct Textures {
-    private let  textures: [Texture: Bitmap]
+public class Textures {
+    
+    public var  textures : [TextureEnum: Bitmap]
+    
+    public init(textures: [TextureEnum: Bitmap]) {
+        self.textures = textures
+    }
+    
+    public subscript(_ texture: TextureEnum) -> Bitmap {
+        return textures[texture]!
+    }
+
 }
 
 public extension Textures {
-    init(loader: (String) -> Bitmap) {
-        var textures = [Texture: Bitmap]()
-        for texture in Texture.allCases {
-            textures[texture] = loader(texture.rawValue)
-        }
-        self.init(textures: textures)
-    }
     
-    subscript(_ texture: Texture) -> Bitmap {
-        return textures[texture]!
-    }
+//    init(loader: (String) -> Bitmap) {
+//        var textures = [TextureEnum: Bitmap]()
+//        for texture in TextureEnum.allCases {
+//            textures[texture] = loader(texture.rawValue)
+//        }
+//        self.init(textures: textures)
+//    }
+
+    
 }

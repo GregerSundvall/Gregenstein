@@ -24,7 +24,7 @@ public extension Tile {
         }
     }
     
-    var textures: [Texture] {
+    var textures: [TextureEnum] {
         switch self {
         case .floor:
             return [.floor, .ceiling]

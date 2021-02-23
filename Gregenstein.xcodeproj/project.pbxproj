@@ -39,6 +39,16 @@
 		5597DA4F25B1E71A00CCD974 /* Billboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA4E25B1E71A00CCD974 /* Billboard.swift */; };
 		5597DA5525B5AF4500CCD974 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA5425B5AF4500CCD974 /* Actor.swift */; };
 		5597DA5B25B5C1FF00CCD974 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5597DA5A25B5C1FF00CCD974 /* Animation.swift */; };
+		55CA429D25E3B80500DD98E9 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA429C25E3B80500DD98E9 /* Map.swift */; };
+		55CA42A325E3B81200DD98E9 /* Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA42A225E3B81200DD98E9 /* Texture.swift */; };
+		55CA42A925E3BC5200DD98E9 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CA42A825E3BC5200DD98E9 /* Resources.swift */; };
+		55F8B73B25E3EA630065B972 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8B73A25E3EA630065B972 /* ImagePicker.swift */; };
+		55F8B74125E3EA6B0065B972 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8B74025E3EA6B0065B972 /* UIImageExtension.swift */; };
+		55F8B74725E3EAA10065B972 /* Gregenstein_LauncherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8B74625E3EAA10065B972 /* Gregenstein_LauncherApp.swift */; };
+		55F8B75025E3EAB20065B972 /* MapListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8B74C25E3EAB20065B972 /* MapListView.swift */; };
+		55F8B75125E3EAB20065B972 /* TextureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8B74D25E3EAB20065B972 /* TextureListView.swift */; };
+		55F8B75225E3EAB20065B972 /* MapDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8B74E25E3EAB20065B972 /* MapDetailsView.swift */; };
+		55F8B75325E3EAB20065B972 /* MenuStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F8B74F25E3EAB20065B972 /* MenuStart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +143,16 @@
 		5597DA4E25B1E71A00CCD974 /* Billboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Billboard.swift; sourceTree = "<group>"; };
 		5597DA5425B5AF4500CCD974 /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		5597DA5A25B5C1FF00CCD974 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		55CA429C25E3B80500DD98E9 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		55CA42A225E3B81200DD98E9 /* Texture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texture.swift; sourceTree = "<group>"; };
+		55CA42A825E3BC5200DD98E9 /* Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		55F8B73A25E3EA630065B972 /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		55F8B74025E3EA6B0065B972 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		55F8B74625E3EAA10065B972 /* Gregenstein_LauncherApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gregenstein_LauncherApp.swift; sourceTree = "<group>"; };
+		55F8B74C25E3EAB20065B972 /* MapListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapListView.swift; sourceTree = "<group>"; };
+		55F8B74D25E3EAB20065B972 /* TextureListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextureListView.swift; sourceTree = "<group>"; };
+		55F8B74E25E3EAB20065B972 /* MapDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapDetailsView.swift; sourceTree = "<group>"; };
+		55F8B74F25E3EAB20065B972 /* MenuStart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuStart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +223,8 @@
 		5597D97B25AEE97300CCD974 /* Gregenstein */ = {
 			isa = PBXGroup;
 			children = (
+				55F8B74625E3EAA10065B972 /* Gregenstein_LauncherApp.swift */,
+				55CA429B25E3B7D700DD98E9 /* Launcher */,
 				5597D97C25AEE97300CCD974 /* AppDelegate.swift */,
 				5597D97E25AEE97300CCD974 /* SceneDelegate.swift */,
 				5597D98025AEE97300CCD974 /* ViewController.swift */,
@@ -267,6 +289,38 @@
 				5597D9C525AEEB6800CCD974 /* Info.plist */,
 			);
 			path = EngineTests;
+			sourceTree = "<group>";
+		};
+		55CA429B25E3B7D700DD98E9 /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				55F8B73925E3EA500065B972 /* Views */,
+				55F8B73425E3EA410065B972 /* Model */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		55F8B73425E3EA410065B972 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55F8B74025E3EA6B0065B972 /* UIImageExtension.swift */,
+				55F8B73A25E3EA630065B972 /* ImagePicker.swift */,
+				55CA42A825E3BC5200DD98E9 /* Resources.swift */,
+				55CA42A225E3B81200DD98E9 /* Texture.swift */,
+				55CA429C25E3B80500DD98E9 /* Map.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55F8B73925E3EA500065B972 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55F8B74E25E3EAB20065B972 /* MapDetailsView.swift */,
+				55F8B74C25E3EAB20065B972 /* MapListView.swift */,
+				55F8B74F25E3EAB20065B972 /* MenuStart.swift */,
+				55F8B74D25E3EAB20065B972 /* TextureListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,10 +527,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F8B75125E3EAB20065B972 /* TextureListView.swift in Sources */,
+				55CA429D25E3B80500DD98E9 /* Map.swift in Sources */,
+				55CA42A325E3B81200DD98E9 /* Texture.swift in Sources */,
+				55F8B75025E3EAB20065B972 /* MapListView.swift in Sources */,
+				55CA42A925E3BC5200DD98E9 /* Resources.swift in Sources */,
 				5597D9EC25AEF43300CCD974 /* UIImage+Bitmap.swift in Sources */,
 				5597D98125AEE97300CCD974 /* ViewController.swift in Sources */,
+				55F8B75325E3EAB20065B972 /* MenuStart.swift in Sources */,
+				55F8B74725E3EAA10065B972 /* Gregenstein_LauncherApp.swift in Sources */,
+				55F8B74125E3EA6B0065B972 /* UIImageExtension.swift in Sources */,
+				55F8B73B25E3EA630065B972 /* ImagePicker.swift in Sources */,
 				5597D97D25AEE97300CCD974 /* AppDelegate.swift in Sources */,
 				5597D97F25AEE97300CCD974 /* SceneDelegate.swift in Sources */,
+				55F8B75225E3EAB20065B972 /* MapDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

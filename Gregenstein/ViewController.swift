@@ -3,22 +3,21 @@
 
 import UIKit
 import Engine
+import SwiftUI
 
 private let joystickRadius: Double = 40
 private let maximumTimeStep: Double = 1 / 20
 private let worldTimeStep: Double = 1 / 120
-private func loadTextures() -> Textures {
-    return Textures(loader: { name in
-    Bitmap(image: UIImage(named: name)!)!
-    })
-}
+
 
 class ViewController: UIViewController {
     private let imageView = UIImageView()
     private let panGesture = UIPanGestureRecognizer()
     private var world = World(map: loadMap())
     private var lastFrameTime = CACurrentMediaTime()
-    private let textures = loadTextures()
+    @EnvironmentObject var resources : Resources
+    var textures = Textures(textures: [TextureEnum: Bitmap]())
+
 
     private var inputVector: Vector {
         switch panGesture.state {
@@ -36,13 +35,68 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadTextures()
         setUpImageView()
         view.addGestureRecognizer(panGesture)
         
         let displayLink = CADisplayLink(target: self, selector: #selector(update))
         displayLink.add(to: .main, forMode: .common)
+        
+    }
+    
+//    public func loadTextures() -> Textures {
+//        return Textures(loader: { name in
+//        Bitmap(image: UIImage(named: name)!)!
+//        })
+//    }
+    
+    func loadTextures() {
+        let map = resources.mapToPlay
+        
+        
+
+        if let img = UIImage(data: map.texturePalette[0].imageData) {
+            textures.textures[TextureEnum(rawValue: "wall")] = Bitmap(image: img)
+        }
+        if let img = UIImage(data: map.texturePalette[0].imageData2) {
+            textures.textures["wall2"] = Bitmap(image: img)
+        }
+        if let img = UIImage(data: map.texturePalette[1].imageData) {
+            textures.textures["wallGreenish"] = Bitmap(image: img)
+        }
+        if let img = UIImage(data: map.texturePalette[1].imageData2) {
+            textures.textures["wallGreenish2"] = Bitmap(image: img)
+        }
+        if let img = UIImage(data: map.texturePalette[2].imageData2) {
+            textures.textures["wallArt"] = Bitmap(image: img)
+        }
+        if let img = UIImage(data: map.texturePalette[2].imageData2) {
+            textures.textures["wallArt2"] = Bitmap(image: img)
+        }
+        if let img = UIImage(data: map.texturePalette[3].imageData) {
+            textures.textures["floor"] = Bitmap(image: img)
+        }
+        if let img = UIImage(data: map.texturePalette[4].imageData) {
+            textures.textures["floorLava"] = Bitmap(image: img)
+        }
+        if let img = UIImage(data: map.texturePalette[5].imageData) {
+            textures.textures["ceiling"] = Bitmap(image: img)
+        }
+        if let img = UIImage(named: "monster") {
+            textures.textures["monster"] = Bitmap(image: img)
+        }
+        if let img = UIImage(named: "monsterWalk1") {
+            textures.textures["monsterWalk1"] = Bitmap(image: img)
+        }
+        if let img = UIImage(named: "monsterWalk2") {
+            textures.textures["monsterWalk2"] = Bitmap(image: img)
+        }
+        
+      
         
     }
     
@@ -58,7 +112,11 @@ class ViewController: UIViewController {
         imageView.layer.magnificationFilter = .nearest
     }
     
+
+    
     @objc func update(_ displayLink: CADisplayLink) {
+        let textures = loadTextures()
+
         let timeStep = min(maximumTimeStep, displayLink.timestamp - lastFrameTime)
         let inputVector = self.inputVector
         let rotation = inputVector.x * world.player.turningSpeed * worldTimeStep
